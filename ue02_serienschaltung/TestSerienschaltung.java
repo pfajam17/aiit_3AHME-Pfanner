@@ -9,6 +9,7 @@ public class TestSerienschaltung {
                 serienschaltung.addWiderstand(30);
             } catch (InvalidResistorValueException ex) {
                 System.out.println(ex.getMessage());
+                throw new TestFailedException(ex);
             }  
         serienschaltung.setStrom(5);   
         System.out.println(serienschaltung);        
@@ -25,6 +26,13 @@ public class TestSerienschaltung {
                 System.out.println(ex.getMessage());
             }
         
+        }
+        
+        public static class TestFailedException extends RuntimeException{
+        public TestFailedException(Throwable cause) {
+            super(cause);
+        }
+            
         }
 
 }

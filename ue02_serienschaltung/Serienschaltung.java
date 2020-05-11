@@ -1,14 +1,16 @@
 package ue02_serienschaltung;
+import java.util.ArrayList;
 
 public class Serienschaltung {
 	
 	public double strom;
-	public double spannung;
-	public double[] widerstandsFeld;
-	
+	public double spannung = 0.0;
+        ArrayList<Double> widerstandsListe = new ArrayList<>();
+	//public double[] widerstandsFeld;
+        
 	private void updateSpannung() {
 		double gesamtwiderstand = 0.0;
-		for(double r : widerstandsFeld) {
+		for(double r : widerstandsListe) {
 			gesamtwiderstand += r;
 		}		
 		spannung = gesamtwiderstand * strom;		
@@ -18,18 +20,13 @@ public class Serienschaltung {
                 if(widerstandInOhm < 0 || widerstandInOhm > 10E6){
                     throw new InvalidResistorValueException(widerstandInOhm);
                 }
-            
-            
-		if(widerstandsFeld == null){
-                    widerstandsFeld = new double [1];
-                    widerstandsFeld[0] = widerstandInOhm;
-                }else{
-                    double [] feld = new double [widerstandsFeld.length +1];
-                    for(int i = 0; i < widerstandsFeld.length; i++){
-                        feld[i] = widerstandsFeld[i];
-                    }feld[widerstandsFeld.length] = widerstandInOhm;
-                    widerstandsFeld = feld;
-                }
+                
+               /* if(widerstandsListe.isEmpty()){
+                    return;
+                }*/
+               //nicht auskommentiert ist das array widerstandsListe immer leer, k.A. wieso
+               
+                widerstandsListe.add(widerstandInOhm);
                 updateSpannung();
         }
 	
@@ -48,7 +45,7 @@ public class Serienschaltung {
 
     @Override
     public String toString() {
-        return "Serienschaltung{" + "strom=" + strom + ", spannung=" + spannung + ", widerstandsFeld=" + widerstandsFeld + '}';
+        return "Serienschaltung{" + "strom=" + strom + ", spannung=" + spannung + ", widerstandsFeld=" + widerstandsListe + '}';
     }
 	
 }
