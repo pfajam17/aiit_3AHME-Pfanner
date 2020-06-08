@@ -4,7 +4,7 @@ package ue05_koerpergruppe;
 public class TestKoerperGruppe {
     
     public static void main(String[] args) {
-        /*
+        
         KoerperGruppe g = new KoerperGruppe();
      
         g.setDichte(Koerper.DICHTE_BUCHE); 
@@ -16,13 +16,13 @@ public class TestKoerperGruppe {
         g.add(new Kugel(0.1)); 
         g.add(new Kugel(0.15));    
     
-        System.out.println("Koerpergruppe besteht aus " + g.size() + " Körpern"); 
+        //System.out.println("Koerpergruppe besteht aus " + g.size() + " Körpern"); 
         System.out.println(g); 
         System.out.println("");
     
-        System.out.println(String.format("Gesamtmasse: %.3fkg", g.gesamtMasse()));
-        System.out.println(String.format("Gesamtvolumen: %.3fdm³", g.gesamtVolumen() * 1000)); 
-     */
+        System.out.println(String.format("Gesamtmasse: %.3fkg", g.gesamtmasse()));
+        System.out.println(String.format("Gesamtvolumen: %.3fdm³", g.gesamtvolumen() * 1000)); 
+     
     }
     
      

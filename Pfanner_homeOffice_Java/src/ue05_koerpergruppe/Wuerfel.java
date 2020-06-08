@@ -1,6 +1,8 @@
 
 package ue05_koerpergruppe;
 
+import java.util.Locale;
+
 public final class Wuerfel extends Koerper {
     
     private double a;
@@ -32,4 +34,12 @@ public final class Wuerfel extends Koerper {
     public double volumen(){
         return a*a*a;
     }
+
+    @Override
+    public String toString() {
+        return String.format(Locale.ENGLISH, "{\"a\":%e, \"dichte\":%e}", a, getDichte());
+        
+    }
+    
+    
 }

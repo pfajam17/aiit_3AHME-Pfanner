@@ -1,6 +1,8 @@
 
 package ue05_koerpergruppe;
 
+import java.util.Locale;
+
 public final class Quader extends Koerper{
     
     double a;
@@ -33,6 +35,15 @@ public final class Quader extends Koerper{
     
      public Quader(double a, double b, double h){
         super(Koerper.DICHTE_EICHE);
+        if(a<=0){
+            throw new IllegalArgumentException("parameter a invalid");
+        }
+        if(b<=0){
+            throw new IllegalArgumentException("parameter b invalid");
+        }
+        if(h<=0){
+            throw new IllegalArgumentException("parameter h invalid");
+        }
         setA(a);
         setB(b);
         setH(h);
@@ -44,7 +55,7 @@ public final class Quader extends Koerper{
         setB(b);
         setH(h);
     }
-     
+    
     @Override
      public double oberflaeche(){
          return a*b*2.0 + a*h*2.0 + b*h*2.0;
@@ -57,7 +68,7 @@ public final class Quader extends Koerper{
 
     @Override
     public String toString() {
-        return "Quader{" + "a=" + a + ", b=" + b + ", h=" + h + '}';
+        return String.format(Locale.ENGLISH, "{\"a\":%e, \"b\":%e, \"h\":%e, \"dichte\":%e}", a, b, h, getDichte());
     }
      
 }

@@ -1,15 +1,20 @@
 
 package ue05_koerpergruppe;
 
-public class Koerper {
-    private double dichte;
+public abstract class Koerper {
     
-    public static double DICHTE_EICHE = 670;
-    public static double DICHTE_BUCHE = 690;
+    private double dichte;   
+    public static final double DICHTE_EICHE = 670;
+    public static final double DICHTE_BUCHE = 690;
     
     public Koerper(double dichte){
-       
+       if(dichte < 0){
+           throw new IllegalArgumentException("invalid parameter dichte");
+       }
+       this.dichte = dichte;
     }
+    //insert code fügt nur Konstruktor mit {this.dichte = dichte;} ein ohne Überprüfung
+    
 
     public double getDichte() {
         return dichte;
@@ -19,16 +24,12 @@ public class Koerper {
         this.dichte = dichte;
     }
     
-    double masse(){
+    public double masse(){
         return volumen() * dichte;
     }
     
-    double oberflaeche(){
-        return 0.0;
-    }
+    public abstract double oberflaeche();
     
-    double volumen(){
-        return 0.0;
-    }
+    public abstract double volumen();
     
 }
