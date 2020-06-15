@@ -40,6 +40,6 @@ public final class Wuerfel extends Koerper {
         return String.format(Locale.ENGLISH, "{\"a\":%e, \"dichte\":%e}", a, getDichte());
         
     }
-    
+
     
 }

@@ -3,13 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue03_objects/TestPerson.java</file>
-            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue05_koerpergruppe/KoerperGruppe.java</file>
-            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue05_koerpergruppe/TestKoerperGruppe.java</file>
-            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue05_koerpergruppe/Wuerfel.java</file>
-            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue05_koerpergruppe/Koerper.java</file>
-            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue05_koerpergruppe/Quader.java</file>
-            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue05_koerpergruppe/Kugel.java</file>
+            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue06_serienschaltung/Capacitor.java</file>
+            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue06_serienschaltung/Coil.java</file>
+            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue06_serienschaltung/Component.java</file>
+            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue06_serienschaltung/Resistor.java</file>
+            <file>file:/C:/Users/1527217/Documents/NetBeansProjects/Pfanner_homeOffice_Java/src/ue06_serienschaltung/SerialCircuit.java</file>
         </group>
     </open-files>
 </project-private>

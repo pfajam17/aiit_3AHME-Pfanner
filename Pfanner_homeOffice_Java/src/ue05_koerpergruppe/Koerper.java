@@ -3,7 +3,7 @@ package ue05_koerpergruppe;
 
 public abstract class Koerper {
     
-    private double dichte;   
+    private double dichte;
     public static final double DICHTE_EICHE = 670;
     public static final double DICHTE_BUCHE = 690;
     

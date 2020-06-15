@@ -23,7 +23,5 @@ public class TestKoerperGruppe {
         System.out.println(String.format("Gesamtmasse: %.3fkg", g.gesamtmasse()));
         System.out.println(String.format("Gesamtvolumen: %.3fdm³", g.gesamtvolumen() * 1000)); 
      
-    }
-    
-     
+    }     
 }

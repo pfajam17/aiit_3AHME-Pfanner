@@ -12,6 +12,7 @@ public class KoerperGruppe {
 
     public KoerperGruppe() {
     }
+    
     public KoerperGruppe(Collection<Koerper> koerperListe, double dichte) {
         this.koerperListe.addAll(koerperListe);
         setDichte(dichte);
